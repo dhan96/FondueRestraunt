@@ -40,6 +40,7 @@ img {
     width: 33.333333%;
     height: 350px;
     float: left;
+    border-color: black;
 }
 
 .box1 {
