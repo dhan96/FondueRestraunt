@@ -1,81 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Menu</title>
-<link rel="stylesheet" href="style2.css" type="text/css" />
+      <title>Menu</title>
+      <link rel="stylesheet" href="style2.css" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style3.css">
+  <link href="https://fonts.googleapis.com/css?family=Quickand:500" rel="stylesheet">
+  <script type="https://code.jquery.com/jquery-3.2.1.js">
+  </script>
+    <script type="text/javascript">
+      $(window).on('scroll', function() {
+          if($(window).scrolltop()) {
+            $('nav').addClass('black');
+          }
+          else {
+            $('nav').removeClass('black');
+          }
+      })
+    
+  </script>
 </head>
 <body>
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style12.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div id="container">
+   <div class="wrapper">
+      <nav>
+        <div class="logo" style="font-family: 'Permanent Marker', cursive; font-size: 250%; padding-bottom: 20px;"><b>The Melting Pot</b></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="menu.html">Menu</a></li>
+          <li><a  href="contact.html">About Us</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="#">Websites</a></li>
+        </ul>
+      </nav>
+       <section class="sec 1"></section>
+        <section class="content">
+          <div id="container">
 
         <div class="box box1">
-           <center><header>Cheese Fondues</header></center>
+           <center><header><b>Cheese Fondues</b></header></center>
            <center><img src="images/cheese.jpg" height="75" width="100"></center>
            <b><article>Wisconsin Cheddar</article></b>
                <p>Mild, comforting
                   Featured Cheeses: Aged cheddar, Emmenthaler
                   Melted with: Lager beer, garlic, spices
-                  with Redbridge® beer  Gluten Free. 10.95</p>
+                  with Redbridge® beer. $10.95</p>
+            <div class="alert alert-success">
+            <strong>Gluten Free!</strong> This product doesn't contain gluten. 
+            <a href="https://en.wikipedia.org/wiki/Gluten-free_diet" class="alert-link">Learn More Here!</a>
+  </div>
         </div>
 
         <div class="box box2">
-           <center><header>Chocolate Fondues</header></center>
+           <center><header><b>Chocolate Fondues</b></header></center>
            <center><img src="images/chocolate.jpg" height="75" width="100"></center>
            <b><article>Bananas Foster</article></b>
                <p>Lucious, flambéed
                   Featured Chocolate: White
-                  Melted with: Bananas, dulce de leche, cinnamon
-                  Gluten Free. 10.95  </p>
+                  Melted with: Bananas, dulce de leche, cinnamon. $10.95  </p>
         </div>
 
         <div class="box box3">
-            <center><header>Kids Menu</header></center>
+            <center><header><b>Kids Menu</b></header></center>
             <center><img src="images/lemonade.jpg" height="75" width="100"></center>
             <b><article>Very Berry Lemonade</article></b>
-            <p>A blast of strawberry and wildberry purees combine to create a sweet and refreshing lemonade. 4.95</p>
+            <p>A blast of strawberry and wildberry purees combine to create a sweet and refreshing lemonade. $4.95</p>
          </div>
 
         <div class="box box4">
-            <center><header>Dessert Drinks</header></center>
+            <center><header><b>Dessert Drinks</b></header></center>
             <center><img src="images/dessert.jpg" height="75" width="100"></center>
             <b><article>Salted Caramel Mochatini</article></b>
             <p>Satisfy your sweet and salty craving with
                Patrón XO Cafe Dark Cocoa, salted
                caramel syrup, Baileys and 
-               half-and-half. 10.50</p>
+               half-and-half. $10.50</p>
         </div>
 
         <div class="box box5">
-            <center><header>Farm Fresh Salads</header></center>
+            <center><header><b>Farm Fresh Salads</b></header></center>
             <center><img src="images/salad.jpg" height="75" width="100"></center>
             <b><article>Caesar</article></b>
-            <p>Crisp romaine, shredded Parmesan cheese, croutons and 
-               Parmesan-dusted pine nuts, tossed with Caesar dressing.
-               without croutons  Gluten Free. 8.50  </p>
+            <p>Crisp romaine, shredded Parmesan cheese, croutons and parmesan-dusted pine nuts, tossed with Caesar dressing. $8.50  </p>
+            <div class="alert alert-danger">
+            <strong>Warning!</strong> Contains Peanuts.
+            <a href="https://en.wikipedia.org/wiki/Peanut_allergy" class="alert-link"> Learn More. </a>
+  </div>
+  </div>
         </div>
+
         <div class="box box6">
         <center><header>Cooking Styles</header></center>
         <center><img src="images/cook.jpg" height="75" width="100"></center>
         <b><article>Mojo</article></b>
         <p>Bold, flavorful 
-           Caribbean-inspired bouillon bursting with flavors of fresh garlic and citrus. Gluten Free. 6.50.</p>
+           Caribbean-inspired bouillon bursting with flavors of fresh garlic and citrus. <b>$6.50</b></p>
+        <div class="alert alert-success">
+            <strong>Gluten Free!</strong> This product doesn't contain gluten. 
+            <a href="https://en.wikipedia.org/wiki/Gluten-free_diet" class="alert-link">Learn More Here!</a>
      </div>
-
         <div class="clearfix"></div>
     </div>
-</body>
-</html>
-
-<nav>
-      <a href="index.html"><center><img src="images/download.png" height="75" width="75"></center>Home</a>
-      <a href="contact.html"><center><img src="images/contact.png" height="75" width="75"></center>Contact Us</a>
-      <a href="locations.html"><center><img src="images/location.jpg" height="75" width="75"></center>Locations</a>
-   </nav>
+    </div>
+    
 </body>
 </html>

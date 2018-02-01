@@ -3,28 +3,225 @@
 	<head>
 		<title>The Melting Pot</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
-		<style type="text/css">
-#box1 {
-    background-color: lightpink;
-    width: 500px;
-	height: 385px;
-	padding-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin-left: 100px;
-	margin-right: 250px;
-	margin-top: 2px;
-	outline: 1px solid black;
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	 <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;
+background-color: honeydew;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 </style>
-	</head>
 	<body>
-	<h1>The Melting Pot</h1>
-	<div id="box1"><center><img src="images/PotCover.jpg" alt="Restraunt Cover" width="500" ></center></div>
-	<nav>
-		<a href="menu.html"><center><img src="images/menu.jpg" height="75" width="75"></center>Menus!</a>
-		<a href="contact.html"><center><img src="images/contact.png" height="75" width="75"></center>Contact Us</a>
-		<a href="locations.html"><center><img src="images/location.jpg" height="75" width="75"></center>Locations</a>
+		<nav>
+		  <h1 class="brand"><a href="#" style="font-family: 'Permanent Marker', cursive;">The Melting Pot</a></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">About Us</a></li>
+            <li><a href="locations.html">Locations</a></li>
+
+        </ul>
+        <div style="clear: both;"></div>
+    </nav>
+    <div class="responsive-bar">
+        <h3 class="brand"><a href="#" style="font-size: 75%; font-family: 'Permanent Marker', cursive;">Dylan Han</a></h3>
+        <h4 class="menu"><img src="images/threelines.png" height="25" width="50"></h4>
+         <div style="clear: both;"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu").click(function(){
+                $("nav") .slideToggle(500);
+            })
+        })
+    </script>
 	</nav>
+	<center><b><h2 style="font-family: 'Francois One', sans-serif; font-weight: 900;">Discover Us!</h2></b></center>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/pots.jpg" width="700" height="432" style="width:100%; font-size: 150%;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/cheese.jpg" width="700" height="432" style="width:100%; font-size: 150%;">
+  <div class="text">FUN! FRESH! FLAVORFUL! FONDUE!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/melting.jpg" width="700" height="432" style="width:100%; font-size: 150%;">
+  <div class="text">Check out where you can find us!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/about.jpg" width="700" height="432" style="width:100%; font-size: 150%;" href="contact.html">
+  <div class="text">Find out who we are!</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+</script>
+
+<div class="media" style="margin-top: 75px; margin-left: 30px; margin-bottom: 75px;">
+    <div class="media-left">
+      <img src="images/profile.png" class="media-object" style="width:45px;">
+    </div>
+     <div class="media-body">
+      <h4 class="media-heading">DeQuandre Smalls <small><i>Posted on Jan. 19, 2018</i></small></h4>
+      <p>This place is where I found out that I loved fondue. It is also the place I found my future wife and planned to get married.</p>
+      
+      <!-- Nested media object -->
+      <div class="media">
+        <div class="media-left">
+          <img src="images/man.png" class="media-object" style="width:45px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Chuckles Huckstein <small><i>Posted on Jan. 20, 2018</i></small></h4>
+          <p>DeQuandre I love your story it has inspired me to go out and try this place. Thanks so much I loved the food and experience.</p>
+
+          <!-- Nested media object -->
+          <div class="media">
+            <div class="media-left">
+              <img src="images/circle.png" class="media-object" style="width:45px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Gina Tinygold <small><i>Posted on Jan. 21, 2018</i></small></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Nested media object -->
+        <div class="media">
+          <div class="media-left">
+            <img src="images/gina.png" class="media-object" style="width:45px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Chipper Sunbaby <small><i>Posted on Jan. 27, 2018</i></small></h4>
+            <p>I loved reading both of your guys' comments thanks for the recommdation I had so much fun at the location in Larspur. I love the whole melting pot community!<p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Nested media object -->    
+    <div class="media">
+      <div class="media-left">
+        <img src="images/steam.png" class="media-object" style="width:45px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Cassy Basser <small><i>Posted on Jan. 29, 2018</i></small></h4>
+        <p>I love all the comments on this page. This website is awesome. I wish I could give the person who made it an A++ or a hug.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
 	</body>
 </html>
