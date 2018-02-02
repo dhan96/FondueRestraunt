@@ -1,24 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>The Melting Pot</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Quickand:500" rel="stylesheet">
-      <script type="https://code.jquery.com/jquery-3.2.1.js">
-  </script>
-    <script type="text/javascript">
-      $(window).on('scroll', function() {
-          if($(window).scrolltop()) {
-            $('nav').addClass('black');
-          }
-          else {
-            $('nav').removeClass('black');
-          }
-      })
-    
-  </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	 <style>
 * {box-sizing: border-box;}
@@ -96,96 +86,43 @@ body {
   font-family: Quicksand;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  padding: 10px 100px;
-  box-sizing: border-box;
-  transition: .3s;
-  background-color: bisque;
-}
-
-nav.black {
-  background: rgba(0,0,0,0.8);
-  height: 100px;
-  padding: 10px 100px;
-}
-
-nav .logo {
-  padding: 22px 20px;
-  height: 80px;
-  float: left;
-  font-size: 24px;
-  transition: .3s;
-}
-
-nav.black .logo {
-  color: #fff;
-}
-
-nav ul {
-  list-style: none; 
-  float: right;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  list-style: none;
-
-}
-
-nav ul li a {
-  line-height: 80px;
-  color: #151515;
-  padding: 12px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: .3s;
-}
-
-nav.black ul li a {
-  color: #fff;
-}
-
-nav ul li a:focus {
-  outline: none;
-}
-
-nav ul li a.active {
-  background: #E2472F;
-  color: #fff;
-  border-radius: 6px;
-}
-
-section.sec1 {
-  width: 100%
-  height: 100vh;
-  background: url(BG.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 </style>
 	<body>
-		 <div class="wrapper">
-      <nav>
-        <div class="logo" style="font-family: 'Permanent Marker', cursive; font-size: 250%; padding-bottom: 20px;"><b>The Melting Pot</b></div>
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">About Us</a></li>
-          <li><a href="https://www.meltingpot.com/restaurant-locations.aspx">Locations</a></li>
-          <li><a href="https://dhan96.github.io/land/">Websites</a></li>
-        </ul>
-      </nav>
-      <section class="sec 1"></section>
-      <section class="content">
-	<center><b><h2 style="font-family: 'Francois One', sans-serif; font-weight: 900; margin-top: 150px;">Discover Us!</h2></b></center>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="font-size: 150%; font-family: 'Permanent Marker', cursive;">The Melting Pot</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Websites<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://dhan96.github.io/webclass/">Biography</a></li>
+            <li><a href="index.html">Restraunt</a></li>
+            <li><a href="https://dhan96.github.io/land/">Landing Page</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">About Us</a></li>
+        <li><a href="https://www.meltingpot.com/restaurant-locations.aspx">Locations</a>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<center><b><h2 style="font-family: 'Francois One', sans-serif; font-weight: 900; margin-top: 25px;">Discover Us!</h2></b></center>
 
 
 <div class="slideshow-container">
